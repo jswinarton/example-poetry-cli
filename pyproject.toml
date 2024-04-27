@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "test-cli"
+version = "0.1.0"
+description = ""
+authors = ["Jeremy Swinarton <jeremy@swinarton.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typer = "^0.12.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.24.0"
+pytest = "^8.1.2"
+
+[tool.poetry.scripts]
+test_cli="test_cli:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
